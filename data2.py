@@ -1,0 +1,25 @@
+# get data
+owner_first_name = 'Jon'
+owner_last_name = 'Doe'
+ssn1, ssn2, ssn3 = '610', '86', '8169'
+company_name = 'La Senda'
+business_street = '1234 Business St.'
+business_city = 'Portland'
+business_zip_code = '91701'
+business_state = 'Oregon'
+mailing_street = business_street
+mailing_city = business_city
+mailing_zip = business_zip_code
+organizer_name = 'Alyssa Smith'
+organizer_email = 'ant@yahoo.com'
+card_number = '9484848484848484'
+cvv = '848'
+expiration_month = '09'
+expiration_year = '24'
+card_name = 'Jon Doe'
+phone_number = '9192923434'
+card_street = business_street
+card_city = business_city
+card_zip_code = business_zip_code
+card_state = business_state
+entity_number="201900810382"

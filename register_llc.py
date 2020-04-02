@@ -3,11 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 import time
 import xlsxwriter
-
-print('\n')
-print('\n')
-
-import data.py
+from data2 import *
 
 print('\n')
 print('\n')
