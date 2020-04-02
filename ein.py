@@ -1,28 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
-import requests
-from bs4 import BeautifulSoup
 import time
-import xlsxwriter
-from autogui import booya
 
 
 print('\n')
 print('\n')
 
-# get data
-owner_first_name = input("Business Owner First Name: ")
-owner_last_name = input("Business Owner Last Name: ")
-ssn1, ssn2, ssn3 = input("Social Security #: ").replace('-', ' ').split()
-print('Business Address')
-business_street = input("Street: ").title()
-business_city = input("City: ").title()
-business_zip_code = input("Zip: ")
-business_state = input('State: ').capitalize()
-phone_number = input('Phone Number: ')
-
+import data.py
 
 print('\n')
 print('\n')
@@ -57,7 +42,6 @@ driver.find_element_by_xpath('//*[@id="applicantSSN4"]').send_keys(ssn3)
 driver.find_element_by_xpath('//*[@id="iamthird"]').click()
 driver.find_element_by_xpath(
     '//*[@id="individual-leftcontent"]/form/div[5]/input').click()
-booya()
 driver.find_element_by_xpath('//*[@id="rightcontent"]/input').click()
 driver.find_element_by_xpath('//*[@id="yes"]').click()
 driver.find_element_by_xpath('//*[@id="rightcontent"]/input')
