@@ -1,12 +1,15 @@
 # get data
 owner_first_name = 'Jon'
 owner_last_name = 'Doe'
+wife_name= 'Sara'
+wife_last_name= 'Jacobs'
+aog_date= 'January 5, 1995'
 ssn1, ssn2, ssn3 = '610', '86', '8169'
 company_name = 'La Senda'
 business_street = '1234 Business St.'
-business_city = 'Portland'
+business_city = 'Alta Loma'
 business_zip_code = '91701'
-business_state = 'Oregon'
+business_state = 'California'
 mailing_street = business_street
 mailing_city = business_city
 mailing_zip = business_zip_code
@@ -23,3 +26,4 @@ card_city = business_city
 card_zip_code = business_zip_code
 card_state = business_state
 entity_number="201900810382"
+type_of_business='tax'

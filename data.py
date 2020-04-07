@@ -1,9 +1,12 @@
+
 # get data
 owner_first_name = input("Business Owner First Name: ")
 owner_last_name = input("Business Owner Last Name: ")
 ssn1, ssn2, ssn3 = input("Social Security #: ").replace('-', ' ').split()
 company_name = input("Company name: ")
 company_name = " ".join(w.capitalize() for w in company_name.split())
+entity_number= input("Entity Number: ")
+type_of_business = input("Type of Business: ")
 print('Business Address')
 business_street = input("Street: ").title()
 business_city = input("City: ").title()

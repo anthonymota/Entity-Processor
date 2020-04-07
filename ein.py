@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 import time
-import data2.py
+from data import *
 
 print('\n')
 print('\n')
