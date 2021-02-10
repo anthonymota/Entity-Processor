@@ -213,7 +213,7 @@ if 'Inc' in legal_company_name:
     register_corp.run(legal_company_name,business_street,business_city,business_zip_code)
     if 'San Bernardino' in county:
         fbn_san_bernardino.run(legal_company_name,county,business_street,business_city,business_zip_code,business_state,phone_number,your_name,date_commenced)
-    else:        
+    else:        lalala
         fbn_la_.run(legal_company_name,business_street,business_city,business_zip_code,organizer_name)
 elif 'Llc' in legal_company_name:
     print('Its an LLC!')
