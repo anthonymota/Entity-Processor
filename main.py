@@ -5,9 +5,6 @@ import fbn_la_
 import operating_agreement
 import register_llc
 import infostatement_llc
-import re
-
-
 from docx import Document
 from docx.shared import Inches
 import subprocess
@@ -28,7 +25,7 @@ if 'Inc' in variables["legal_company_name"]:
         fbn_la_.run(variables["legal_company_name"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["organizer_name"])
 elif 'Llc' in variables["legal_company_name"]:
     print('Its an LLC!')
-    register_llc.run(variables["legal_company_name"],variables["business_street"],variables["business_city"],variables["business_state"],variables["business_zip_code"],mailing_address,mailing_street,mailing_city,mailing_zip,variables["organizer_name"],variables["organizer_email"],variables["expiration_month"],variables["expiration_year"],variables["card_name"],variables["card_number"],variables["cvv"],variables["card_street"],variables["card_city"],variables["card_state"],variables["card_zip_code"],variables["phone_number"])
+    register_llc.run(variables["legal_company_name"],variables["business_street"],variables["business_city"],variables["business_state"],variables["business_zip_code"],variables["mailing_address"],variables["mailing_street"],variables["mailing_city"],variables["mailing_zip_code"],variables["organizer_name"],variables["organizer_email"],variables["expiration_month"],variables["expiration_year"],variables["card_name"],variables["card_number"],variables["cvv"],variables["card_street"],variables["card_city"],variables["card_state"],variables["card_zip_code"],variables["phone_number"])
     if 'San Bernardino' in variables["county"]:
         fbn_san_bernardino.run(variables["legal_company_name"],variables["county"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["business_state"],variables["phone_number"],variables["your_name"],variables["date_commenced"])
     else:

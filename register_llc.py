@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import xlsxwriter
-print('hello')
+
 
 def run(legal_company_name,business_street,business_city,business_state,business_zip_code,mailing_address,mailing_street,mailing_city,mailing_zip,organizer_name,organizer_email,expiration_month,expiration_year,card_name,card_number,cvv,card_street,card_city,card_state,card_zip_code,phone_number):
 
@@ -58,6 +58,7 @@ def run(legal_company_name,business_street,business_city,business_state,business
         '//*[@id="form-section-1"]/div[19]/input[2]').click()
 
     # form3
+    time.sleep(1)
     driver.find_element_by_xpath('//*[@id="element78_corp"]').click()
     time.sleep(1)
     driver.find_element_by_xpath('//*[@id="s2id_element168"]/span[1]/span').click()
