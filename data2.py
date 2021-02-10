@@ -1,4 +1,9 @@
 # get data
+your_name='Tony Mota'
+date_commenced='01/02/2019'
+legal_company_name="La Senda Inc"
+county="Los Angeles"
+entity_number='123121'
 owner_first_name = 'Jon'
 owner_last_name = 'Doe'
 wife_name= 'Sara'
@@ -27,3 +32,4 @@ card_zip_code = business_zip_code
 card_state = business_state
 entity_number="201900810382"
 type_of_business='tax'
+mailing_address="yes"

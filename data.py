@@ -1,11 +1,13 @@
-
-# get data
-owner_first_name = input("Business Owner First Name: ")
-owner_last_name = input("Business Owner Last Name: ")
-ssn1, ssn2, ssn3 = input("Social Security #: ").replace('-', ' ').split()
-company_name = input("Company name: ")
-company_name = " ".join(w.capitalize() for w in company_name.split())
+#get data
+your_name = input("Enter your name: ")
+legal_company_name = input("Legal Company Name (Please include LLC or Inc.): ")
+legal_company_name = " ".join(w.capitalize() for w in legal_company_name.split())
+date_commenced = input("Date which registrant first commenced business under FBN(MM/DD/YYYY): ")
+county=input("Which county are you in: ").capitalize()
+county=" ".join(s.capitalize() for s in county.split())
 entity_number= input("Entity Number: ")
+organizer_name=input("Organizer Name: ")
+organizer_email=input("Organizer Email: ")
 type_of_business = input("Type of Business: ")
 print('Business Address')
 business_street = input("Street: ").title()
@@ -22,9 +24,7 @@ elif mailing_address == 'yes':
     mailing_street = business_street
     mailing_city = business_city
     mailing_zip = business_zip_code
-first_name, last_name = input("Organizer Name: ").title().split()
-organizer_name = first_name + " " + last_name
-organizer_email = input('Organizer Email: ')
+ssn1, ssn2, ssn3 = input("Social Security #: ").replace('-', ' ').split()
 card_number = input('Card Number: ')
 cvv = input('Security Code: ')
 expiration_month = input('Expiration Month(MM): ')
