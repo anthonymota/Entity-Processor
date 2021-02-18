@@ -9,8 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import xlsxwriter
 
-def run(legal_company_name,business_street,business_city,business_zip_code):
-    mailing_address='yes'
+def run(legal_company_name,business_street,business_city,business_zip_code,mailing_address):
+    
     print('\n')
     print('\n')
 
