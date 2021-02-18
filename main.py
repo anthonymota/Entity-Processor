@@ -11,7 +11,7 @@ import subprocess
 
 
 variables={}
-document = Document('data_document.docx')
+document = Document('finished_data.docx')
 for k in document.paragraphs:
     for j in range(len(k.text)):
         if k.text[j]==':':
