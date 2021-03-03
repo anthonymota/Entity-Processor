@@ -37,14 +37,14 @@ print(variables)
 if 'Inc' in variables["legal_company_name"]:
     register_corp.run(variables["legal_company_name"],variables["business_street"],variables["business_city"],variables["business_zip_code"],mailing_address)
     if 'San Bernardino' in variables['county']:
-        fbn_san_bernardino.run(variables["legal_company_name"],variables["county"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["business_state"],variables["phone_number"],variables["your_name"],variables["date_commenced"])
+        fbn_san_bernardino.run(variables["legal_company_name"],variables["county"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["business_state"],variables["phone_number"],variables["your_name"],variables["date_commenced (MM/DD/YYYY)"])
     else:        
         fbn_la_.run(variables["legal_company_name"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["organizer_name"])
 elif 'Llc' in variables["legal_company_name"]:
     print('Its an LLC!')
     register_llc.run(variables["legal_company_name"],variables["business_street"],variables["business_city"],variables["business_state"],variables["business_zip_code"],mailing_address,variables["mailing_street"],variables["mailing_city"],variables["mailing_zip_code"],variables["organizer_name"],variables["organizer_email"],variables["expiration_month"],variables["expiration_year"],variables["card_name"],variables["card_number"],variables["cvv"],variables["card_street"],variables["card_city"],variables["card_state"],variables["card_zip_code"],variables["phone_number"])
     if 'San Bernardino' in variables["county"]:
-        fbn_san_bernardino.run(variables["legal_company_name"],variables["county"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["business_state"],variables["phone_number"],variables["your_name"],variables["date_commenced"])
+        fbn_san_bernardino.run(variables["legal_company_name"],variables["county"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["business_state"],variables["phone_number"],variables["your_name"],variables["date_commenced (MM/DD/YYYY)"])
     else:
         fbn_la_.run(variables["legal_company_name"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["organizer_name"])
     infostatement_llc.run(variables["entity_number"],variables["business_street"],variables["business_city"],variables["business_zip_code"],owner_first_name,owner_last_name,variables["type_of_business"],variables["organizer_email"])
@@ -52,8 +52,10 @@ elif 'Llc' in variables["legal_company_name"]:
 else:
     individual=True
     if 'San Bernardino' in variables["county"]:
-        fbn_san_bernardino.run(variables["legal_company_name"],variables["county"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["business_state"],variables["phone_number"],variables["your_name"],variables["date_commenced"])
+        fbn_san_bernardino.run(variables["legal_company_name"],variables["county"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["business_state"],variables["phone_number"],variables["your_name"],variables["date_commenced (MM/DD/YYYY)"])
     else:
         fbn_la_.run(variables["legal_company_name"],variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["organizer_name"])
     operating_agreement.run(owner_last_name,owner_first_name,wife_last_name,wife_name,variables["legal_company_name"],aog_date,variables["business_street"],variables["business_city"],variables["business_zip_code"],variables["business_state"],variables["type_of_business"])
-    
+
+f=open("finished_data.doc","w")    
+f.write("data_document.doc")
